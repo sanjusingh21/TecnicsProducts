@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkreta - Login</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="left">
+            <div id="owl-example" class="owl-carousel">
+                <div class="item darkCyan">
+                    <div class="img-text">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="item forestGreen">
+                    <div class="img-text">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="item orange">
+                    <div class="img-text">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="login-box">
+                <form class="form text-center">
+                    <div class="logo ">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <input type="text" placeholder="User Name" class="form-ctrl user-input" autocomplete>
+                    <input type="password" placeholder="Password" class="form-ctrl pswd-input" autocomplete="off">
+                    <p class="text-right"><a href="#" class="link">Forgot password?</a></p>
+                    <button class="btn-blue btn-login">Login</button>
+                </form>
+            </div>
+            <div class="otp-section">
+                <button class="btn-orange">GET IN TOUCH</button>
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            $("#owl-example").owlCarousel({
+                items: 1,
+                itemsDesktop: [1000, 1], 
+                itemsDesktopSmall: [900, 1], 
+                itemsTablet: [700, 1], 
+                itemsMobile: [479, 1], 
+                navigation: false,
+                scrollPerPage: true,
+                slideSpeed: 500,
+                paginationSpeed: 500,
+                autoplay: true
+            });
+        });
+    </script>
+</body>
+
+</html>
